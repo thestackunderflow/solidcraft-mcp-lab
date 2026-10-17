@@ -165,7 +165,7 @@ Sketch1, Extrude1, Fillet1 and Shell1"; no step failed. All true against the tra
 first quadrant instead of on the origin, and it picked a 5 mm corner radius (the prompt gave none; the demo uses 6 mm),
 hence a different volume. Its exported file, re-read with `solidcraft-cli eval`
 (`claude-enclosure.step.eval.json`): 100 × 60 × 30, volume 29 044.36 mm³. One wrong guess: its last line said the file
-is probably "inside the container and not on your Windows filesystem"; with the mount, it landed in
+is "inside the container and not on your Windows filesystem"; with the mount, it landed in
 `tests/out/claude-run/`. It took no screenshot.
 
 Protocol details visible in the log: Claude Code first probes `server/discover` (protocol `2026-07-28`); SolidCraft
