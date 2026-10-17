@@ -1,0 +1,18 @@
+services:
+  # The 8 tests (0-7): a small Python MCP client drives `solidcraft-cli mcp --allow-path /lab/out`.
+  tests:
+    build: .
+    image: solidcraft-mcp-lab:0.14.0
+    volumes:
+      - .:/work
+      - ./tests/out/lab-out:/lab/out
+    working_dir: /work
+    command: ["python3", "-m", "pytest", "-v", "-p", "no:cacheprovider", "tests/test_lab.py"]
+
+  # The MCP server alone on stdin/stdout, for a real MCP client (the logged Claude Code run).
+  server:
+    image: solidcraft-mcp-lab:0.14.0
+    stdin_open: true
+    volumes:
+      - ./tests/out/claude-run:/lab/out
+    command: ["solidcraft-cli", "mcp", "--allow-path", "/lab/out"]

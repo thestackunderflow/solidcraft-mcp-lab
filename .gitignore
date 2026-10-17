@@ -1,0 +1,4 @@
+__pycache__/
+.pytest_cache/
+# tests/out is committed (the video quotes it), except binaries over 2 MB (listed in tests/out/LARGE_FILES.txt)
+tests/out/large/
