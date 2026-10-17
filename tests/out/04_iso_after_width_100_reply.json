@@ -1,0 +1,24 @@
+{
+ "arguments": {
+  "view": "iso"
+ },
+ "content": [
+  {
+   "data": "<416419 bytes of image/png, saved as a .png in tests/out>",
+   "mimeType": "image/png",
+   "type": "image"
+  },
+  {
+   "text": "{\"bytes\":416419,\"height\":600,\"path\":null,\"renderer\":\"gpu-software\",\"source\":\"model\",\"width\":960}",
+   "type": "text",
+   "text_parsed": {
+    "bytes": 416419,
+    "height": 600,
+    "path": null,
+    "renderer": "gpu-software",
+    "source": "model",
+    "width": 960
+   }
+  }
+ ]
+}

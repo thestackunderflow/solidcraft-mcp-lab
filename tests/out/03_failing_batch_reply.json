@@ -1,0 +1,94 @@
+{
+ "content": [
+  {
+   "text": "{\n  \"completed\": 3,\n  \"failed\": {\n    \"command\": \"solid.fillet\",\n    \"error\": \"not supported yet: the blend is larger than a corner radius; the largest radius that fits is 2 mm\",\n    \"index\": 3\n  },\n  \"ok\": false,\n  \"results\": [\n    {\n      \"attachment\": \"fixed\",\n      \"created\": {\n        \"constraints\": [],\n        \"curves\": [],\n        \"dimensions\": [],\n        \"points\": []\n      },\n      \"name\": \"USB port\",\n      \"projected\": null,\n      \"sketch\": 5\n    },\n    {\n      \"constraints\": [\n        \"k1\",\n        \"k2\",\n        \"k3\",\n        \"k4\",\n        \"k5\"\n      ],\n      \"corners\": {\n        \"bottom_left\": \"p1\",\n        \"bottom_right\": \"p2\",\n        \"top_left\": \"p4\",\n        \"top_right\": \"p3\"\n      },\n      \"created\": {\n        \"constraints\": [\n          \"k1\",\n          \"k2\",\n          \"k3\",\n          \"k4\",\n          \"k5\"\n        ],\n        \"curves\": [\n          \"l1\",\n          \"l2\",\n          \"l3\",\n          \"l4\",\n          \"l5\",\n          \"l6\"\n        ],\n        \"dimensions\": [],\n        \"points\": [\n          \"p1\",\n          \"p2\",\n          \"p3\",\n          \"p4\",\n          \"p5\"\n        ]\n      },\n      \"curves\": [\n        \"l1\",\n        \"l2\",\n        \"l3\",\n        \"l4\"\n      ],\n      \"sides\": {\n        \"bottom\": \"l1\",\n        \"left\": \"l4\",\n        \"right\": \"l2\",\n        \"top\": \"l3\"\n      },\n      \"sketch\": {\n        \"dof\": 4,\n        \"solved\": true\n      }\n    },\n    {\n      \"profiles\": 1,\n      \"sketch\": 5\n    }\n  ],\n  \"rolled_back\": true,\n  \"undone\": 3\n}",
+   "type": "text",
+   "text_parsed": {
+    "completed": 3,
+    "failed": {
+     "command": "solid.fillet",
+     "error": "not supported yet: the blend is larger than a corner radius; the largest radius that fits is 2 mm",
+     "index": 3
+    },
+    "ok": false,
+    "results": [
+     {
+      "attachment": "fixed",
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [],
+       "points": []
+      },
+      "name": "USB port",
+      "projected": null,
+      "sketch": 5
+     },
+     {
+      "constraints": [
+       "k1",
+       "k2",
+       "k3",
+       "k4",
+       "k5"
+      ],
+      "corners": {
+       "bottom_left": "p1",
+       "bottom_right": "p2",
+       "top_left": "p4",
+       "top_right": "p3"
+      },
+      "created": {
+       "constraints": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5"
+       ],
+       "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5",
+        "l6"
+       ],
+       "dimensions": [],
+       "points": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+       ]
+      },
+      "curves": [
+       "l1",
+       "l2",
+       "l3",
+       "l4"
+      ],
+      "sides": {
+       "bottom": "l1",
+       "left": "l4",
+       "right": "l2",
+       "top": "l3"
+      },
+      "sketch": {
+       "dof": 4,
+       "solved": true
+      }
+     },
+     {
+      "profiles": 1,
+      "sketch": 5
+     }
+    ],
+    "rolled_back": true,
+    "undone": 3
+   }
+  }
+ ],
+ "isError": true
+}

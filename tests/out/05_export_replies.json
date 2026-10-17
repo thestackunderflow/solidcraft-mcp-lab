@@ -1,0 +1,45 @@
+{
+ "allowed": {
+  "/lab/out/enclosure.step": {
+   "content": [
+    {
+     "text": "{\n  \"bytes\": 27825,\n  \"format\": \"Step\",\n  \"path\": \"/lab/out/enclosure.step\"\n}",
+     "type": "text"
+    }
+   ]
+  },
+  "/lab/out/enclosure.stl": {
+   "content": [
+    {
+     "text": "{\n  \"bytes\": 115884,\n  \"format\": \"StlBinary\",\n  \"path\": \"/lab/out/enclosure.stl\"\n}",
+     "type": "text"
+    }
+   ]
+  }
+ },
+ "refused": {
+  "/lab/forbidden/enclosure.step": {
+   "content": [
+    {
+     "text": "/lab/forbidden/enclosure.step: /lab/forbidden/enclosure.step: outside the folders this agent may use (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-7-3687df12, /lab/out); allow another folder with `--allow-path DIR`",
+     "type": "text"
+    }
+   ],
+   "isError": true
+  },
+  "/lab/out/../forbidden/enclosure.step": {
+   "content": [
+    {
+     "text": "/lab/out/../forbidden/enclosure.step: /lab/out/../forbidden/enclosure.step: outside the folders this agent may use (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-7-3687df12, /lab/out); allow another folder with `--allow-path DIR`",
+     "type": "text"
+    }
+   ],
+   "isError": true
+  }
+ },
+ "allowed_listing": [
+  "enclosure.step",
+  "enclosure.stl"
+ ],
+ "forbidden_listing": []
+}

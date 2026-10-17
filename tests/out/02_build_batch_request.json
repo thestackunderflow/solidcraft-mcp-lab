@@ -1,0 +1,131 @@
+{
+ "commands": [
+  {
+   "command": "parameters.change",
+   "params": {
+    "name": "width",
+    "expression": "80 mm",
+    "comment": "outside, X"
+   }
+  },
+  {
+   "command": "parameters.change",
+   "params": {
+    "name": "depth",
+    "expression": "60 mm",
+    "comment": "outside, Y"
+   }
+  },
+  {
+   "command": "parameters.change",
+   "params": {
+    "name": "height",
+    "expression": "30 mm"
+   }
+  },
+  {
+   "command": "parameters.change",
+   "params": {
+    "name": "wall",
+    "expression": "2 mm"
+   }
+  },
+  {
+   "command": "sketch.create",
+   "params": {
+    "plane": "XY",
+    "name": "Outline"
+   }
+  },
+  {
+   "command": "sketch.rectangle.center",
+   "params": {
+    "center": [
+     0,
+     0
+    ],
+    "corner": [
+     40,
+     30
+    ]
+   }
+  },
+  {
+   "command": "sketch.constraint.coincident",
+   "params": {
+    "a": "p5",
+    "b": "origin"
+   }
+  },
+  {
+   "command": "sketch.dimension",
+   "params": {
+    "entities": [
+     "l1"
+    ],
+    "value": "width"
+   }
+  },
+  {
+   "command": "sketch.dimension",
+   "params": {
+    "entities": [
+     "l2"
+    ],
+    "value": "depth"
+   }
+  },
+  {
+   "command": "sketch.finish",
+   "params": {}
+  },
+  {
+   "command": "solid.extrude",
+   "params": {
+    "distance": "height",
+    "body_name": "Enclosure"
+   }
+  },
+  {
+   "command": "solid.fillet",
+   "params": {
+    "edges": [
+     [
+      40,
+      30,
+      15
+     ],
+     [
+      -40,
+      30,
+      15
+     ],
+     [
+      -40,
+      -30,
+      15
+     ],
+     [
+      40,
+      -30,
+      15
+     ]
+    ],
+    "radius": 6
+   }
+  },
+  {
+   "command": "solid.shell",
+   "params": {
+    "faces": [
+     [
+      0,
+      0,
+      30
+     ]
+    ],
+    "thickness": "wall"
+   }
+  }
+ ]
+}

@@ -37,12 +37,11 @@ def shelled_volume(w, d, h, r=6.0, t=2.0):
     return outer - inner
 
 
-def size(bbox):
-    """[dx, dy, dz] from a bbox reported as {min:[..], max:[..]} or [[min],[max]]."""
-    if isinstance(bbox, dict):
-        lo, hi = bbox["min"], bbox["max"]
-    else:
-        lo, hi = bbox
+def size(m):
+    """[dx, dy, dz] of a `measure` reply. Observed in v0.14.0: `total` has volume, area and counts
+    but no bbox; each body has `bbox: {min, max}`. So: the union of the bodies' boxes."""
+    lo = [min(b["bbox"]["min"][i] for b in m["bodies"]) for i in range(3)]
+    hi = [max(b["bbox"]["max"][i] for b in m["bodies"]) for i in range(3)]
     return [round(hi[i] - lo[i], 6) for i in range(3)]
 
 
@@ -60,7 +59,7 @@ def state(mcp):
     m = mcp.tool_json("measure", {})
     return {
         "volume_mm3": round(m["total"]["volume_mm3"], 6),
-        "bbox_size": size(m["total"]["bbox"]),
+        "bbox_size": size(m),
         "timeline": [(f.get("name"), f.get("type")) for f in d["timeline"]],
         "undo": d["undo"],
         "params": {p["name"]: p["value"] for p in d["params"]},
@@ -130,7 +129,7 @@ def test_2_one_batch_builds_the_enclosure(mcp):
     params = {p["name"]: p["value"] for p in d["params"]}
     assert params == {**params, "width": 80, "depth": 60, "height": 30, "wall": 2}
     assert m["body_count"] == 1
-    assert size(m["total"]["bbox"]) == pytest.approx([80, 60, 30], abs=1e-6)
+    assert size(m) == pytest.approx([80, 60, 30], abs=1e-6)
     assert m["total"]["volume_mm3"] == pytest.approx(shelled_volume(80, 60, 30), rel=1e-3)
     types = [f["type"] for f in d["timeline"]]
     assert len(types) >= 4  # sketch, extrude, fillet, shell (names as the engine reports them)
@@ -174,9 +173,17 @@ def test_4_set_parameter_width_100(mcp):
     after = mcp.tool_json("measure", {})
     save("04_set_parameter_reply", r)
     save("04_measure_after_width_100", after)
-    assert r["recomputed"], r
+    d = mcp.tool_json("inspect_design", {"measure": False, "sketches": False})
+    timeline = [{k: f.get(k) for k in ("id", "name", "type", "error", "warning", "ms")} for f in d["timeline"]]
+    save("04_timeline_after_width_100", timeline)
+    # Observed in v0.14.0: `recomputed` is a COUNT of rebuilt features, not a list of names.
+    # Every feature here depends on width (sketch -> extrude -> fillet -> shell), so it equals
+    # the timeline length; the names come from inspect_design's timeline.
+    assert isinstance(r["recomputed"], int) and r["recomputed"] > 0, r
+    assert r["recomputed"] == len(timeline), (r, timeline)
+    assert all(f["error"] is None for f in timeline), timeline
     assert r["errors"] == [], r
-    sb, sa = size(before["total"]["bbox"]), size(after["total"]["bbox"])
+    sb, sa = size(before), size(after)
     save("04_bbox_before_after", {"before": sb, "after": sa,
                                   "volume_before": before["total"]["volume_mm3"],
                                   "volume_after": after["total"]["volume_mm3"]})
@@ -216,12 +223,12 @@ def test_6_undo_brings_width_back_to_80(mcp):
     d = mcp.tool_json("inspect_design", {"measure": False, "sketches": False})
     m = mcp.tool_json("measure", {})
     save("06_undo_reply", raw)
-    save("06_after_undo", {"params": d["params"], "bbox_size": size(m["total"]["bbox"]),
+    save("06_after_undo", {"params": d["params"], "bbox_size": size(m),
                            "volume_mm3": m["total"]["volume_mm3"]})
     assert raw.get("isError") is not True, raw
     params = {p["name"]: p["value"] for p in d["params"]}
     assert params["width"] == 80
-    assert size(m["total"]["bbox"]) == pytest.approx([80, 60, 30], abs=1e-6)
+    assert size(m) == pytest.approx([80, 60, 30], abs=1e-6)
 
 
 # 7 ------------------------------------------------------------------------------------------

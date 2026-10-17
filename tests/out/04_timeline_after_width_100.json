@@ -1,0 +1,34 @@
+[
+ {
+  "id": 1,
+  "name": "Outline",
+  "type": "Sketch",
+  "error": null,
+  "warning": null,
+  "ms": 0.085515
+ },
+ {
+  "id": 2,
+  "name": "Extrude1",
+  "type": "ExtrudeFeature",
+  "error": null,
+  "warning": null,
+  "ms": 2.529487
+ },
+ {
+  "id": 3,
+  "name": "Fillet1",
+  "type": "FilletFeature",
+  "error": null,
+  "warning": null,
+  "ms": 124.87142800000001
+ },
+ {
+  "id": 4,
+  "name": "Shell1",
+  "type": "ShellFeature",
+  "error": null,
+  "warning": null,
+  "ms": 56.837326
+ }
+]

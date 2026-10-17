@@ -1,0 +1,64 @@
+{
+ "params": [
+  {
+   "comment": "outside, X",
+   "error": null,
+   "expression": "80 mm",
+   "model": false,
+   "name": "width",
+   "unit": "mm",
+   "value": 80.0
+  },
+  {
+   "comment": "outside, Y",
+   "error": null,
+   "expression": "60 mm",
+   "model": false,
+   "name": "depth",
+   "unit": "mm",
+   "value": 60.0
+  },
+  {
+   "comment": "",
+   "error": null,
+   "expression": "30 mm",
+   "model": false,
+   "name": "height",
+   "unit": "mm",
+   "value": 30.0
+  },
+  {
+   "comment": "",
+   "error": null,
+   "expression": "2 mm",
+   "model": false,
+   "name": "wall",
+   "unit": "mm",
+   "value": 2.0
+  },
+  {
+   "comment": "",
+   "error": null,
+   "expression": "width",
+   "model": true,
+   "name": "d1",
+   "unit": "mm",
+   "value": 80.0
+  },
+  {
+   "comment": "",
+   "error": null,
+   "expression": "depth",
+   "model": true,
+   "name": "d2",
+   "unit": "mm",
+   "value": 60.0
+  }
+ ],
+ "bbox_size": [
+  80.0,
+  60.0,
+  30.0
+ ],
+ "volume_mm3": 24289.396020210213
+}

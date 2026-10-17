@@ -1,0 +1,212 @@
+{
+ "content": [
+  {
+   "text": "{\n  \"completed\": 13,\n  \"ok\": true,\n  \"results\": [\n    {\n      \"display_value\": 80.0,\n      \"errors\": [],\n      \"expression\": \"80 mm\",\n      \"name\": \"width\",\n      \"recomputed\": 0,\n      \"restored\": 0,\n      \"value\": 80.0\n    },\n    {\n      \"display_value\": 60.0,\n      \"errors\": [],\n      \"expression\": \"60 mm\",\n      \"name\": \"depth\",\n      \"recomputed\": 0,\n      \"restored\": 0,\n      \"value\": 60.0\n    },\n    {\n      \"display_value\": 30.0,\n      \"errors\": [],\n      \"expression\": \"30 mm\",\n      \"name\": \"height\",\n      \"recomputed\": 0,\n      \"restored\": 0,\n      \"value\": 30.0\n    },\n    {\n      \"display_value\": 2.0,\n      \"errors\": [],\n      \"expression\": \"2 mm\",\n      \"name\": \"wall\",\n      \"recomputed\": 0,\n      \"restored\": 0,\n      \"value\": 2.0\n    },\n    {\n      \"attachment\": \"fixed\",\n      \"created\": {\n        \"constraints\": [],\n        \"curves\": [],\n        \"dimensions\": [],\n        \"points\": []\n      },\n      \"name\": \"Outline\",\n      \"projected\": null,\n      \"sketch\": 1\n    },\n    {\n      \"constraints\": [\n        \"k1\",\n        \"k2\",\n        \"k3\",\n        \"k4\",\n        \"k5\",\n        \"k6\"\n      ],\n      \"corners\": {\n        \"bottom_left\": \"p1\",\n        \"bottom_right\": \"p2\",\n        \"top_left\": \"p4\",\n        \"top_right\": \"p3\"\n      },\n      \"created\": {\n        \"constraints\": [\n          \"k1\",\n          \"k2\",\n          \"k3\",\n          \"k4\",\n          \"k5\",\n          \"k6\"\n        ],\n        \"curves\": [\n          \"l1\",\n          \"l2\",\n          \"l3\",\n          \"l4\",\n          \"l5\",\n          \"l6\"\n        ],\n        \"dimensions\": [],\n        \"points\": [\n          \"p1\",\n          \"p2\",\n          \"p3\",\n          \"p4\",\n          \"p5\"\n        ]\n      },\n      \"curves\": [\n        \"l1\",\n        \"l2\",\n        \"l3\",\n        \"l4\"\n      ],\n      \"sides\": {\n        \"bottom\": \"l1\",\n        \"left\": \"l4\",\n        \"right\": \"l2\",\n        \"top\": \"l3\"\n      },\n      \"sketch\": {\n        \"dof\": 2,\n        \"solved\": true\n      }\n    },\n    {\n      \"constraint\": \"k6\",\n      \"existing\": true,\n      \"sketch\": {\n        \"dof\": 2,\n        \"solved\": true\n      }\n    },\n    {\n      \"created\": {\n        \"constraints\": [],\n        \"curves\": [],\n        \"dimensions\": [\n          \"k7\"\n        ],\n        \"points\": []\n      },\n      \"expression\": \"width\",\n      \"measured\": 80.0,\n      \"param\": \"d1\",\n      \"sketch\": {\n        \"dof\": 1,\n        \"solved\": true\n      },\n      \"type\": \"LinearDimension\",\n      \"unit\": \"mm\"\n    },\n    {\n      \"created\": {\n        \"constraints\": [],\n        \"curves\": [],\n        \"dimensions\": [\n          \"k8\"\n        ],\n        \"points\": []\n      },\n      \"expression\": \"depth\",\n      \"measured\": 60.0,\n      \"param\": \"d2\",\n      \"sketch\": {\n        \"dof\": 0,\n        \"solved\": true\n      },\n      \"type\": \"LinearDimension\",\n      \"unit\": \"mm\"\n    },\n    {\n      \"profiles\": 1,\n      \"sketch\": 1\n    },\n    {\n      \"bodies\": [\n        \"Enclosure\"\n      ],\n      \"changed_bodies\": [],\n      \"created_bodies\": [\n        \"Enclosure\"\n      ],\n      \"feature\": 2,\n      \"ms\": 3.207654,\n      \"name\": \"Extrude1\",\n      \"removed_bodies\": [],\n      \"warning\": null\n    },\n    {\n      \"bodies\": [\n        \"Enclosure\"\n      ],\n      \"changed_bodies\": [\n        \"Enclosure\"\n      ],\n      \"created_bodies\": [],\n      \"feature\": 3,\n      \"ms\": 135.189784,\n      \"name\": \"Fillet1\",\n      \"removed_bodies\": [],\n      \"warning\": null\n    },\n    {\n      \"bodies\": [\n        \"Enclosure\"\n      ],\n      \"changed_bodies\": [\n        \"Enclosure\"\n      ],\n      \"created_bodies\": [],\n      \"feature\": 4,\n      \"ms\": 60.69464,\n      \"name\": \"Shell1\",\n      \"removed_bodies\": [],\n      \"warning\": null\n    }\n  ]\n}",
+   "type": "text",
+   "text_parsed": {
+    "completed": 13,
+    "ok": true,
+    "results": [
+     {
+      "display_value": 80.0,
+      "errors": [],
+      "expression": "80 mm",
+      "name": "width",
+      "recomputed": 0,
+      "restored": 0,
+      "value": 80.0
+     },
+     {
+      "display_value": 60.0,
+      "errors": [],
+      "expression": "60 mm",
+      "name": "depth",
+      "recomputed": 0,
+      "restored": 0,
+      "value": 60.0
+     },
+     {
+      "display_value": 30.0,
+      "errors": [],
+      "expression": "30 mm",
+      "name": "height",
+      "recomputed": 0,
+      "restored": 0,
+      "value": 30.0
+     },
+     {
+      "display_value": 2.0,
+      "errors": [],
+      "expression": "2 mm",
+      "name": "wall",
+      "recomputed": 0,
+      "restored": 0,
+      "value": 2.0
+     },
+     {
+      "attachment": "fixed",
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [],
+       "points": []
+      },
+      "name": "Outline",
+      "projected": null,
+      "sketch": 1
+     },
+     {
+      "constraints": [
+       "k1",
+       "k2",
+       "k3",
+       "k4",
+       "k5",
+       "k6"
+      ],
+      "corners": {
+       "bottom_left": "p1",
+       "bottom_right": "p2",
+       "top_left": "p4",
+       "top_right": "p3"
+      },
+      "created": {
+       "constraints": [
+        "k1",
+        "k2",
+        "k3",
+        "k4",
+        "k5",
+        "k6"
+       ],
+       "curves": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5",
+        "l6"
+       ],
+       "dimensions": [],
+       "points": [
+        "p1",
+        "p2",
+        "p3",
+        "p4",
+        "p5"
+       ]
+      },
+      "curves": [
+       "l1",
+       "l2",
+       "l3",
+       "l4"
+      ],
+      "sides": {
+       "bottom": "l1",
+       "left": "l4",
+       "right": "l2",
+       "top": "l3"
+      },
+      "sketch": {
+       "dof": 2,
+       "solved": true
+      }
+     },
+     {
+      "constraint": "k6",
+      "existing": true,
+      "sketch": {
+       "dof": 2,
+       "solved": true
+      }
+     },
+     {
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [
+        "k7"
+       ],
+       "points": []
+      },
+      "expression": "width",
+      "measured": 80.0,
+      "param": "d1",
+      "sketch": {
+       "dof": 1,
+       "solved": true
+      },
+      "type": "LinearDimension",
+      "unit": "mm"
+     },
+     {
+      "created": {
+       "constraints": [],
+       "curves": [],
+       "dimensions": [
+        "k8"
+       ],
+       "points": []
+      },
+      "expression": "depth",
+      "measured": 60.0,
+      "param": "d2",
+      "sketch": {
+       "dof": 0,
+       "solved": true
+      },
+      "type": "LinearDimension",
+      "unit": "mm"
+     },
+     {
+      "profiles": 1,
+      "sketch": 1
+     },
+     {
+      "bodies": [
+       "Enclosure"
+      ],
+      "changed_bodies": [],
+      "created_bodies": [
+       "Enclosure"
+      ],
+      "feature": 2,
+      "ms": 3.207654,
+      "name": "Extrude1",
+      "removed_bodies": [],
+      "warning": null
+     },
+     {
+      "bodies": [
+       "Enclosure"
+      ],
+      "changed_bodies": [
+       "Enclosure"
+      ],
+      "created_bodies": [],
+      "feature": 3,
+      "ms": 135.189784,
+      "name": "Fillet1",
+      "removed_bodies": [],
+      "warning": null
+     },
+     {
+      "bodies": [
+       "Enclosure"
+      ],
+      "changed_bodies": [
+       "Enclosure"
+      ],
+      "created_bodies": [],
+      "feature": 4,
+      "ms": 60.69464,
+      "name": "Shell1",
+      "removed_bodies": [],
+      "warning": null
+     }
+    ]
+   }
+  }
+ ]
+}

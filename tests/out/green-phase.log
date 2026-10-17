@@ -1,0 +1,10 @@
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0 -- /usr/bin/python3
+tests/test_lab.py::test_0_version_and_renderer PASSED                    [ 12%]
+tests/test_lab.py::test_1_tools_list_has_the_documented_tools PASSED     [ 25%]
+tests/test_lab.py::test_2_one_batch_builds_the_enclosure PASSED          [ 37%]
+tests/test_lab.py::test_3_failing_batch_rolls_back PASSED                [ 50%]
+tests/test_lab.py::test_4_set_parameter_width_100 PASSED                 [ 62%]
+tests/test_lab.py::test_5_export_inside_allowed_folder_only PASSED       [ 75%]
+tests/test_lab.py::test_6_undo_brings_width_back_to_80 PASSED            [ 87%]
+tests/test_lab.py::test_7_screenshot_returns_png_and_renderer PASSED     [100%]
+============================== 8 passed in 1.57s ===============================

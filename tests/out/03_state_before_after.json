@@ -1,0 +1,72 @@
+{
+ "before": {
+  "volume_mm3": 24289.39602,
+  "bbox_size": [
+   80.0,
+   60.0,
+   30.0
+  ],
+  "timeline": [
+   [
+    "Outline",
+    "Sketch"
+   ],
+   [
+    "Extrude1",
+    "ExtrudeFeature"
+   ],
+   [
+    "Fillet1",
+    "FilletFeature"
+   ],
+   [
+    "Shell1",
+    "ShellFeature"
+   ]
+  ],
+  "undo": 11,
+  "params": {
+   "width": 80.0,
+   "depth": 60.0,
+   "height": 30.0,
+   "wall": 2.0,
+   "d1": 80.0,
+   "d2": 60.0
+  }
+ },
+ "after": {
+  "volume_mm3": 24289.39602,
+  "bbox_size": [
+   80.0,
+   60.0,
+   30.0
+  ],
+  "timeline": [
+   [
+    "Outline",
+    "Sketch"
+   ],
+   [
+    "Extrude1",
+    "ExtrudeFeature"
+   ],
+   [
+    "Fillet1",
+    "FilletFeature"
+   ],
+   [
+    "Shell1",
+    "ShellFeature"
+   ]
+  ],
+  "undo": 11,
+  "params": {
+   "width": 80.0,
+   "depth": 60.0,
+   "height": 30.0,
+   "wall": 2.0,
+   "d1": 80.0,
+   "d2": 60.0
+  }
+ }
+}
