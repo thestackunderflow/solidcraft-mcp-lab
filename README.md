@@ -74,7 +74,7 @@ Read-only (`readOnlyHint: true`): `list_commands, inspect_design, measure, body_
 **Build** (`02_*.json`). The demo's 13 commands (and its sketch ids `p5`, `l1`, `l2`) work unchanged as **one batch**;
 no fallback to separate `execute` calls was needed. Result: `ok: true, completed: 13`. One body "Enclosure":
 bbox X −40…40, Y −30…30, Z 0…30 → **80 × 60 × 30 mm**; **volume 24 289.40 mm³** (analytic for a 6 mm corner radius,
-2 mm wall, open top: 24 289.40); area 24 828.80 mm²; 19 faces (8 cylindrical, 11 planar), 48 edges, 32 vertices.
+2 mm wall, open top, `shelled_volume` in `tests/test_lab.py`: 24 289.49, so 0.0004 % apart); area 24 828.80 mm²; 19 faces (8 cylindrical, 11 planar), 48 edges, 32 vertices.
 Timeline: `Outline` (Sketch), `Extrude1`, `Fillet1`, `Shell1`. Undo depth 11. The sketch dimensions report
 `"expression": "width", "measured": 80.0` and `"expression": "depth", "measured": 60.0`, and the sketch ends at 0 DOF.
 
@@ -88,7 +88,7 @@ the failure is **byte-identical** to the one after the build (same MD5). Note th
 
 **Width 80 → 100** (`04_*.json`). `set_parameter` reply: `{"value": 100.0, "expression": "100 mm", "recomputed": 4,
 "restored": 0, "errors": []}`. Size **[80, 60, 30] → [100, 60, 30]**; volume **24 289.40 → 28 929.40 mm³** (analytic
-28 929.40). All four features have `error: null`.
+28 929.49, 0.0003 % apart). All four features have `error: null`.
 
 **Export and the folder limit** (`05_*.json`). `/lab/out/enclosure.step`: 27 825 bytes, `"format": "Step"`, starts
 `ISO-10303-21`. `/lab/out/enclosure.stl`: 115 884 bytes, `"format": "StlBinary"`. Refused, `isError: true`, exact text:
