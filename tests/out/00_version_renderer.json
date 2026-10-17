@@ -30,6 +30,6 @@
  },
  "gpu_stderr": "",
  "server_stderr_startup": [
-  "solidcraft mcp: files limited to /root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-7-3687df12, /lab/out and the open design's folder (--allow-path DIR adds one, --allow-any-path lifts the limit)"
+  "solidcraft mcp: files limited to /root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-7-2af3b364, /lab/out and the open design's folder (--allow-path DIR adds one, --allow-any-path lifts the limit)"
  ]
 }

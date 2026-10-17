@@ -5,7 +5,7 @@
   "type": "Sketch",
   "error": null,
   "warning": null,
-  "ms": 0.085515
+  "ms": 0.086455
  },
  {
   "id": 2,
@@ -13,7 +13,7 @@
   "type": "ExtrudeFeature",
   "error": null,
   "warning": null,
-  "ms": 2.529487
+  "ms": 2.2420869999999997
  },
  {
   "id": 3,
@@ -21,7 +21,7 @@
   "type": "FilletFeature",
   "error": null,
   "warning": null,
-  "ms": 124.87142800000001
+  "ms": 122.446652
  },
  {
   "id": 4,
@@ -29,6 +29,6 @@
   "type": "ShellFeature",
   "error": null,
   "warning": null,
-  "ms": 56.837326
+  "ms": 57.547072
  }
 ]

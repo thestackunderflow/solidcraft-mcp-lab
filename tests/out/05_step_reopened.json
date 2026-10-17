@@ -1,0 +1,15 @@
+{
+ "bbox_size": [
+  100.0,
+  60.0,
+  30.0
+ ],
+ "volume_mm3": 28929.294620159897,
+ "params": [],
+ "timeline": [
+  [
+   "enclosure",
+   "BaseFeature"
+  ]
+ ]
+}

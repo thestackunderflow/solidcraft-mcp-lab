@@ -216,6 +216,18 @@ def test_5_export_inside_allowed_folder_only(mcp):
                                "forbidden_listing": sorted(os.listdir(FORBIDDEN))})
     assert os.listdir(FORBIDDEN) == []
 
+    # The STEP file, re-read by a separate solidcraft-cli process: the 100 mm geometry, exact,
+    # but no parameters and no feature history (one imported base feature).
+    ev = json.loads(subprocess.run([CLI, "eval", f"{ALLOWED}/enclosure.step"], capture_output=True,
+                                   text=True, check=True).stdout)
+    save("05_step_reopened", {"bbox_size": size(ev), "volume_mm3": ev["bodies"][0]["volume_mm3"],
+                              "params": ev["params"],
+                              "timeline": [(f["name"], f["type"]) for f in ev["timeline"]]})
+    assert size(ev) == pytest.approx([100, 60, 30], abs=1e-6)
+    assert ev["bodies"][0]["volume_mm3"] == pytest.approx(shelled_volume(100, 60, 30), rel=1e-3)
+    assert ev["params"] == []
+    assert [f["type"] for f in ev["timeline"]] == ["BaseFeature"]
+
 
 # 6 ------------------------------------------------------------------------------------------
 def test_6_undo_brings_width_back_to_80(mcp):

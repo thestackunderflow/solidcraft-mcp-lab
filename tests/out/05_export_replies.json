@@ -21,7 +21,7 @@
   "/lab/forbidden/enclosure.step": {
    "content": [
     {
-     "text": "/lab/forbidden/enclosure.step: /lab/forbidden/enclosure.step: outside the folders this agent may use (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-7-3687df12, /lab/out); allow another folder with `--allow-path DIR`",
+     "text": "/lab/forbidden/enclosure.step: /lab/forbidden/enclosure.step: outside the folders this agent may use (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-7-2af3b364, /lab/out); allow another folder with `--allow-path DIR`",
      "type": "text"
     }
    ],
@@ -30,7 +30,7 @@
   "/lab/out/../forbidden/enclosure.step": {
    "content": [
     {
-     "text": "/lab/out/../forbidden/enclosure.step: /lab/out/../forbidden/enclosure.step: outside the folders this agent may use (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-7-3687df12, /lab/out); allow another folder with `--allow-path DIR`",
+     "text": "/lab/out/../forbidden/enclosure.step: /lab/out/../forbidden/enclosure.step: outside the folders this agent may use (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-7-2af3b364, /lab/out); allow another folder with `--allow-path DIR`",
      "type": "text"
     }
    ],
