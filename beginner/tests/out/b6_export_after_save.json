@@ -1,0 +1,13 @@
+{
+ "content": [
+  {
+   "text": "{\n  \"bytes\": 684,\n  \"format\": \"StlBinary\",\n  \"path\": \"/root/designs/exports/stand.stl\"\n}",
+   "type": "text",
+   "text_parsed": {
+    "bytes": 684,
+    "format": "StlBinary",
+    "path": "/root/designs/exports/stand.stl"
+   }
+  }
+ ]
+}

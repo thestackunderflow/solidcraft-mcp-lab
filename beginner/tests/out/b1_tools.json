@@ -1,0 +1,17 @@
+[
+ "batch",
+ "body_topology",
+ "crash_reports",
+ "execute",
+ "export",
+ "inspect_design",
+ "list_commands",
+ "measure",
+ "new_design",
+ "open",
+ "redo",
+ "save",
+ "screenshot",
+ "set_parameter",
+ "undo"
+]

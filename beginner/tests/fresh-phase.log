@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.0.0+repack -- /usr/bin/python3
+rootdir: /work/tests
+collecting ... collected 15 items
+
+test_shim.py::Wrap::test_every_other_line_passes_byte_for_byte PASSED    [  6%]
+test_shim.py::Wrap::test_no_proxy_configured_changes_nothing PASSED      [ 13%]
+test_shim.py::Wrap::test_session_new_starts_the_server_through_the_proxy PASSED [ 20%]
+test_session.py::PromptsDone::test_a_permission_answer_is_not_a_finished_prompt PASSED [ 26%]
+test_session.py::PromptsDone::test_counts_prompts_sent_and_answered PASSED [ 33%]
+test_session.py::CardPolicy::test_a_card_we_expect_is_left_for_the_approve_step PASSED [ 40%]
+test_session.py::CardPolicy::test_an_unexpected_card_in_a_message_is_denied_and_the_turn_awaited PASSED [ 46%]
+test_beginner.py::test_1_the_bridged_server_lists_the_tools_agent_chat_uses PASSED [ 53%]
+test_beginner.py::test_2_a_new_design_is_empty PASSED                    [ 60%]
+test_beginner.py::test_3_a_named_size_that_drives_the_sketch_rebuilds_the_part PASSED [ 66%]
+test_beginner.py::test_4_a_named_size_that_drives_nothing_changes_nothing PASSED [ 73%]
+test_beginner.py::test_5_export_of_an_unsaved_design_into_home_is_refused PASSED [ 80%]
+test_beginner.py::test_6_after_saving_in_a_home_folder_export_into_its_subfolder_works PASSED [ 86%]
+test_beginner.py::test_7_export_outside_the_designs_folder_is_still_refused PASSED [ 93%]
+test_beginner.py::test_8_the_stl_is_a_closed_mesh PASSED                 [100%]
+
+============================== 15 passed in 5.38s ==============================

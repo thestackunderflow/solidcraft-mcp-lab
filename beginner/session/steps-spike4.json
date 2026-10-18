@@ -1,0 +1,8 @@
+[
+ {"send": "What's in my design right now?"},
+ {"send": "Make a 40 mm cube."},
+ {"pause": 3},
+ {"undo": true},
+ {"pause": 3},
+ {"send": "Make a phone stand: base 80 mm wide, back leaning at 70 degrees, a slot for my phone, which is 12 mm thick in its case, plus 1 mm clearance, rounded edges. Give each size a name so I can change it."}
+]

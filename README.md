@@ -10,6 +10,9 @@ agent builds an electronics enclosure from parameters, a failing step rolls the 
 parameter rebuilds the part, files can only be written where you allow, and the server can show the part without a GPU.
 Then one real, logged Claude Code run does the same job from an English request.
 
+**New to SolidCraft? The beginner lab is in [`beginner/`](beginner/)** (18 Oct 2026, v0.15.0): the desktop app's
+Agent chat recorded in Docker, with every ACP and MCP message logged, 15 tests, and the session from the beginner video.
+
 ## What's in it
 
 | Path | What it is |

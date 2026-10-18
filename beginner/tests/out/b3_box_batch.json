@@ -1,0 +1,167 @@
+{
+ "completed": 10,
+ "ok": true,
+ "results": [
+  {
+   "display_value": 80.0,
+   "errors": [],
+   "expression": "80 mm",
+   "name": "width",
+   "recomputed": 0,
+   "restored": 0,
+   "value": 80.0
+  },
+  {
+   "display_value": 60.0,
+   "errors": [],
+   "expression": "60 mm",
+   "name": "depth",
+   "recomputed": 0,
+   "restored": 0,
+   "value": 60.0
+  },
+  {
+   "display_value": 12.0,
+   "errors": [],
+   "expression": "12 mm",
+   "name": "phone_thickness",
+   "recomputed": 0,
+   "restored": 0,
+   "value": 12.0
+  },
+  {
+   "attachment": "fixed",
+   "created": {
+    "constraints": [],
+    "curves": [],
+    "dimensions": [],
+    "points": []
+   },
+   "name": "Base",
+   "projected": null,
+   "sketch": 1
+  },
+  {
+   "constraints": [
+    "k1",
+    "k2",
+    "k3",
+    "k4",
+    "k5",
+    "k6"
+   ],
+   "corners": {
+    "bottom_left": "p1",
+    "bottom_right": "p2",
+    "top_left": "p4",
+    "top_right": "p3"
+   },
+   "created": {
+    "constraints": [
+     "k1",
+     "k2",
+     "k3",
+     "k4",
+     "k5",
+     "k6"
+    ],
+    "curves": [
+     "l1",
+     "l2",
+     "l3",
+     "l4",
+     "l5",
+     "l6"
+    ],
+    "dimensions": [],
+    "points": [
+     "p1",
+     "p2",
+     "p3",
+     "p4",
+     "p5"
+    ]
+   },
+   "curves": [
+    "l1",
+    "l2",
+    "l3",
+    "l4"
+   ],
+   "sides": {
+    "bottom": "l1",
+    "left": "l4",
+    "right": "l2",
+    "top": "l3"
+   },
+   "sketch": {
+    "dof": 2,
+    "solved": true
+   }
+  },
+  {
+   "constraint": "k6",
+   "existing": true,
+   "sketch": {
+    "dof": 2,
+    "solved": true
+   }
+  },
+  {
+   "created": {
+    "constraints": [],
+    "curves": [],
+    "dimensions": [
+     "k7"
+    ],
+    "points": []
+   },
+   "expression": "width",
+   "measured": 80.0,
+   "param": "d1",
+   "sketch": {
+    "dof": 1,
+    "solved": true
+   },
+   "type": "LinearDimension",
+   "unit": "mm"
+  },
+  {
+   "created": {
+    "constraints": [],
+    "curves": [],
+    "dimensions": [
+     "k8"
+    ],
+    "points": []
+   },
+   "expression": "depth",
+   "measured": 60.0,
+   "param": "d2",
+   "sketch": {
+    "dof": 0,
+    "solved": true
+   },
+   "type": "LinearDimension",
+   "unit": "mm"
+  },
+  {
+   "profiles": 1,
+   "sketch": 1
+  },
+  {
+   "bodies": [
+    "Base"
+   ],
+   "changed_bodies": [],
+   "created_bodies": [
+    "Base"
+   ],
+   "feature": 2,
+   "ms": 3.799864,
+   "name": "Extrude1",
+   "removed_bodies": [],
+   "warning": null
+  }
+ ]
+}

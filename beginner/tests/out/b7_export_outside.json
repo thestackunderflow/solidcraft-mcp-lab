@@ -1,0 +1,9 @@
+{
+ "content": [
+  {
+   "text": "/opt/stand.stl: /opt/stand.stl: outside the folders this agent may use (/root/.local/share/solidcraft/recovery, /tmp/solidcraft-mcp-153-2c96bb8, /root/designs); allow another folder with `--allow-path DIR`",
+   "type": "text"
+  }
+ ],
+ "isError": true
+}

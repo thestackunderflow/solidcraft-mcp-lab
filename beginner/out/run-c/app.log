@@ -1,0 +1,3 @@
+SolidCraft graphics: Vulkan, MSAA 4x (requested 4x)
+solidcraft: control server listening on 127.0.0.1:7878 (token in /root/.local/share/solidcraft/control/7878.token)
+solidcraft: control server listening on 127.0.0.1:37731 (token in /root/.local/share/solidcraft/control/37731.token)

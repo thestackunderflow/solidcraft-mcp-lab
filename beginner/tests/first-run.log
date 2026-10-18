@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-7.2.1, pluggy-1.0.0+repack -- /usr/bin/python3
+rootdir: /work/tests
+collecting ... collected 11 items
+
+test_shim.py::Wrap::test_every_other_line_passes_byte_for_byte PASSED    [  9%]
+test_shim.py::Wrap::test_no_proxy_configured_changes_nothing PASSED      [ 18%]
+test_shim.py::Wrap::test_session_new_starts_the_server_through_the_proxy PASSED [ 27%]
+test_beginner.py::test_1_the_bridged_server_lists_the_tools_agent_chat_uses PASSED [ 36%]
+test_beginner.py::test_2_a_new_design_is_empty PASSED                    [ 45%]
+test_beginner.py::test_3_a_named_size_that_drives_the_sketch_rebuilds_the_part PASSED [ 54%]
+test_beginner.py::test_4_a_named_size_that_drives_nothing_changes_nothing PASSED [ 63%]
+test_beginner.py::test_5_export_of_an_unsaved_design_into_home_is_refused PASSED [ 72%]
+test_beginner.py::test_6_after_saving_in_a_home_folder_export_into_its_subfolder_works PASSED [ 81%]
+test_beginner.py::test_7_export_outside_the_designs_folder_is_still_refused PASSED [ 90%]
+test_beginner.py::test_8_the_stl_is_a_closed_mesh PASSED                 [100%]
+
+============================== 11 passed in 5.31s ==============================

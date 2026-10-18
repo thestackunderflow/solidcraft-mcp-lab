@@ -1,0 +1,23 @@
+[
+ {"send": "What's in my design right now?"},
+ {"send": "Make a 40 mm cube."},
+ {"pause": 3},
+ {"undo": true},
+ {"pause": 3},
+ {"send": "Make a phone stand: base 80 mm wide, back leaning at 70 degrees, a slot for my phone, which is 12 mm thick in its case, plus 1 mm clearance, rounded edges. Give each size a name so I can change it."},
+ {"pause": 3},
+ {"send": "Connect phone_thickness and clearance to the slot, so changing my phone's thickness resizes the slot. Then check it with measure."},
+ {"pause": 3},
+ {"control": "engine.execute", "params": {"command": "parameters.change", "params": {"name": "phone_thickness", "expression": "6 mm"}}, "label": "THE SLIP: we typed 6 instead of 12"},
+ {"pause": 4},
+ {"send": "Check the slot against my request: my phone is 12 mm thick in its case, plus 1 mm clearance. Use measure, then fix anything that's wrong."},
+ {"pause": 3},
+ {"send": "My new phone is 9 mm thick in its case. Change the stand for it."},
+ {"pause": 3},
+ {"control": "engine.execute", "params": {"command": "file.save_as", "params": {"path": "/root/designs/stand.solidcraft"}}, "label": "YOU: File > Save into a folder in your home folder"},
+ {"pause": 3},
+ {"send": "Export the stand as an STL file into the exports folder next to my design."},
+ {"pause": 4},
+ {"approve": true, "label": "YOU: press Allow"},
+ {"pause": 4}
+]

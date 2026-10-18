@@ -1,0 +1,10 @@
+{"t": "2026-10-18T19:13:19.646Z", "step": 1, "start": {"send": "What's in my design right now?"}}
+{"t": "2026-10-18T19:13:25.653Z", "step": 1, "done": true, "state": "ready", "waiting": 0, "turn": null}
+{"t": "2026-10-18T19:13:25.654Z", "step": 2, "start": {"send": "Make a 40 mm cube."}}
+{"t": "2026-10-18T19:13:34.669Z", "step": 2, "done": true, "state": "ready", "waiting": 0, "turn": null}
+{"t": "2026-10-18T19:13:34.669Z", "step": 3, "start": {"pause": 3}}
+{"t": "2026-10-18T19:13:37.673Z", "step": 4, "start": {"undo": true}}
+{"t": "2026-10-18T19:13:39.684Z", "step": 4, "done": true, "state": "ready", "waiting": 0, "turn": null}
+{"t": "2026-10-18T19:13:39.689Z", "step": 5, "start": {"pause": 3}}
+{"t": "2026-10-18T19:13:42.694Z", "step": 6, "start": {"send": "Make a phone stand: base 80 mm wide, back leaning at 70 degrees, a slot for my phone, which is 12 mm thick in its case, plus 1 mm clearance, rounded edges. Give each size a name so I can change it."}}
+{"t": "2026-10-18T19:15:19.446Z", "step": 6, "done": true, "state": "ready", "waiting": 0, "turn": null}
